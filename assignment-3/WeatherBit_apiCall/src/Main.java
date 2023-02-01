@@ -6,7 +6,7 @@ import java.net.http.HttpResponse;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        String url = "https://www.weatherbit.io/";
+        String url = "https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&key=ebf29f088455422882e30d89fe468574";
 
         // Building a Request
         HttpRequest request = HttpRequest.newBuilder().GET().uri(URI.create(url)).build();
